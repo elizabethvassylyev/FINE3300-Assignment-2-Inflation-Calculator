@@ -92,7 +92,7 @@ cpi_axis.set_title("Canadian Consumer Price Index and Annual Percentage Change")
 cpi_axis.set_xlabel("Date") #labels the (horizontal) x-axis
 cpi_axis.set_ylabel("Consumer Price Index (2002 = 100)") #labels the (left vertical) y-axis
 inflation_axis.set_ylabel("Annual Percentage Change (%)") #labels the (right vertical) y-axis
-cpi_axis.legend([cpi_line[0], inflation_line[0], base_line], ["Monthly CPI", "Annual Percentage Change", "CPI Base Level (100)"], loc="upper right") #adds a legend identifying the three lines
+cpi_axis.legend([cpi_line[0], inflation_line[0], base_line], ["Monthly CPI", "Annual Percentage Change", "CPI Base Level (100)"], loc="upper center") #adds a legend identifying the three lines
 figure.tight_layout() #adjusts the spacing so the graph labels fit properly
 figure.savefig(GRAPH_FILE, dpi=300) #saves the graph as a PNG image
 plt.close(figure) #closes the graph after saving it
